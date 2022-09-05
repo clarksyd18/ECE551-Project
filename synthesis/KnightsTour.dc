@@ -1,0 +1,66 @@
+# Read the verilog files first
+read_file -format sverilog { ./PID.sv ./charge.sv ./cmd_proc.sv ./inert_intf.sv ./inertial_integrator.sv ./IR_intf.sv\
+							./KnightsTour.sv ./MtrDrv.sv ./PWM11.sv ./reset_synch.sv ./SPI_mnrch.sv ./TourCmd.sv\
+							./TourLogic.sv ./UART.v ./UART_rx.sv ./UART_tx.sv ./UART_wrapper.sv}
+
+# Set current design to top level
+set current_design KnightsTour
+
+# Create clock
+create_clock -name "clk" -period 3 -waveform {0 1} clk
+
+# Don't buffer clock during fanout
+set_dont_touch_network [find port clk]
+
+# Constrain input timings and drive
+set sec_inputs [remove_from_collection [all_inputs] [find port clk]]
+set prim_inputs [remove_from_collection $sec_inputs [find port rst_n]]
+set_input_delay -clock clk 0.4 $sec_inputs
+
+set_driving_cell -lib_cell NAND2X2_LVT -library	\
+saed32lvt_tt0p85v25c [copy_collection $prim_inputs]
+
+set_drive 0.1 rst_n
+
+# Constrain output timings and drive
+set_output_delay -clock clk 0.4 [all_outputs]
+set_load 100 [all_outputs]
+
+# Set wireload and transition time
+set_wire_load_model -name 16000 \
+	-library saed32lvt_tt0p85v25c
+
+#max transition time and clk uncertainty
+set_max_transition 0.15 [current_design]
+set_clock_uncertainty 0.15 clk
+
+# compile the design-First
+compile -map_effort medium
+
+# smash the hierarchy
+set_fix_hold clk
+ungroup -all -flatten
+
+# compile the design-Second
+compile -map_effort medium 
+
+report_timing -delay min > KnightsTour_minTime.txt
+
+report_timing -delay max > KnightsTour_maxTime.txt
+
+report_area > KnightsTour_area.txt
+
+# Write out resulting synthesized netlist
+write -format verilog KnightsTour -output KnightsTour.vg
+
+# Write SDC for compressed constraint values
+write_sdc KnightsTour.sdc
+
+exit
+
+
+
+
+
+
+

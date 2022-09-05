@@ -1,0 +1,1183 @@
+# //  Questa Sim
+# //  Version 2021.2_2 linux Jun 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project final
+# Compile of KnightPhysics.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.KnightsTour_tb_up_right -t ns -L /filespace/a/aseigler/ece551/SAED32_lib -voptargs=+acc
+# vsim work.KnightsTour_tb_up_right -t ns -L /filespace/a/aseigler/ece551/SAED32_lib -voptargs="+acc" 
+# Start time: 16:03:09 on Dec 13,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /filespace/a/aseigler/ece551/final_netlists/RemoteComm.sv(114): Module 'UART' is not defined.
+#  For instance 'iUART' at path 'KnightsTour_tb_up_right.iRMT'
+# ** Error: /filespace/a/aseigler/ece551/final_netlists/KnightPhysics.sv(45): Module 'SPI_iNEMO4' is not defined.
+#  For instance 'iNEMO' at path 'KnightsTour_tb_up_right.iPHYS'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 16:03:09 on Dec 13,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 3
+# Compile of SPI_iNEMO4.sv was successful.
+# Compile of UART.v was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -t ns -L /filespace/a/aseigler/ece551/SAED32_lib -voptargs=+acc work.KnightsTour_tb_up_right
+# vsim -t ns -L /filespace/a/aseigler/ece551/SAED32_lib -voptargs="+acc" work.KnightsTour_tb_up_right 
+# Start time: 16:05:13 on Dec 13,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb_up_right.sv(114): (vopt-7063) Failed to find 'cal_done' in hierarchical name 'iDUT.cal_done'.
+#         Region: KnightsTour_tb_up_right
+# ** Error (suppressible): /filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb_up_right.sv(127): (vopt-7063) Failed to find 'iCNTRL' in hierarchical name 'iDUT.iCNTRL.frwrd'.
+#         Region: KnightsTour_tb_up_right
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 16:05:14 on Dec 13,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 3
+# Compile of KnightsTour_tb.sv was successful.
+# Compile of KnightsTour_tb_up_right.sv was successful.
+# Compile of KnightPhysics.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -t ns -L /filespace/a/aseigler/ece551/SAED32_lib -voptargs=+acc work.KnightsTour_tb_up_right
+# vsim -t ns -L /filespace/a/aseigler/ece551/SAED32_lib -voptargs="+acc" work.KnightsTour_tb_up_right 
+# Start time: 16:25:17 on Dec 13,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "RemoteComm(fast)".
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(868): (vopt-2685) [TFMPC] - Too few port connections for '\iRST/RST_N_FF1_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(868): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(870): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/cmd_rdy_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(870): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(874): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/cmd_mux_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(874): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(875): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/cmd_mux_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(875): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(876): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/cmd_mux_reg[0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(876): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(877): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/cmd_mux_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(877): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(882): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/cmd_mux_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(882): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(883): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/cmd_mux_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(883): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(908): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/state_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(908): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(912): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(912): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(914): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(914): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(916): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(916): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(918): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(918): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(920): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(920): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(922): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(922): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(924): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(924): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(926): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(926): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(928): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/shift_reg_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(928): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(930): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/baud_cnt_reg[11] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(930): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(932): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/baud_cnt_reg[10] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(932): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(934): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/baud_cnt_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(934): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(936): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/baud_cnt_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(936): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(944): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/baud_cnt_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(944): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(954): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/rx_ff1_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(954): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(958): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/desired_heading_reg[5] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(958): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(960): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/desired_heading_reg[6] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(960): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(962): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/desired_heading_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(962): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(970): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/cmd_squares_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(970): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(972): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/cmd_squares_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(972): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(980): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/cntrIR_count_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(980): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(984): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/cmd_squares_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(984): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(986): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/cntrIR_count_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(986): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(990): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/state_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(990): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(992): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/add_0_root_sub_0_root_add_155/U1_11 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(992): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1037): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/desired_heading_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1037): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1039): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/desired_heading_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1039): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1041): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/desired_heading_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1041): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1043): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/desired_heading_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1043): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1045): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/cntrIR_ff_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1045): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1077): (vopt-2685) [TFMPC] - Too few port connections for '\iCMD/sub_1_root_sub_0_root_add_155/U2_11 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1077): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1082): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/xx_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1082): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1087): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[0][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1087): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1088): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[0][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1088): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1091): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[3][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1091): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1092): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[0][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1092): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1093): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[1][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1093): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1096): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[1][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1096): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1097): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[3][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1097): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1100): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[1][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1100): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1101): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[3][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1101): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1102): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[0][4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1102): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1105): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[1][4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1105): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1106): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[3][4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1106): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1109): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[1][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1109): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1110): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[3][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1110): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1370): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[0][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1370): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1371): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[1][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1371): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1372): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[2][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1372): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1373): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[3][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1373): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1374): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[4][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1374): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1375): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[5][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1375): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1376): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[6][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1376): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1377): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[7][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1377): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1378): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[8][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1378): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1379): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[9][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1379): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1380): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[10][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1380): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1381): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[11][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1381): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1382): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[12][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1382): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1383): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[13][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1383): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1384): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[14][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1384): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1385): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[15][3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1385): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1494): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/visited_reg[0][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1494): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1497): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[23][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1497): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1499): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[23][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1499): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1501): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[23][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1501): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1519): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[22][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1519): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1521): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[22][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1521): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1522): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[22][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1522): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1540): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[21][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1540): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1541): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[21][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1541): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1542): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[21][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1542): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1559): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[20][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1559): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1561): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[20][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1561): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1563): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[20][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1563): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1580): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[19][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1580): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1581): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[19][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1581): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1582): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[19][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1582): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1599): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[18][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1599): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1600): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[18][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1600): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1601): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[18][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1601): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1618): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[17][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1618): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1619): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[17][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1619): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1620): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[17][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1620): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1637): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[16][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1637): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1639): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[16][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1639): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1641): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[16][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1641): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1658): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[15][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1658): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1659): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[15][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1659): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1660): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[15][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1660): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1677): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[14][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1677): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1678): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[14][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1678): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1679): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[14][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1679): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1696): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[13][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1696): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1698): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[13][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1698): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1699): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[13][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1699): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1716): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[12][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1716): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1718): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[12][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1718): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1720): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[12][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1720): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1737): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[11][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1737): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1738): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[11][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1738): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1739): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[11][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1739): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1756): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[10][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1756): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1757): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[10][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1757): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1758): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[10][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1758): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1775): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[9][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1775): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1777): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[9][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1777): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1778): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[9][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1778): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1795): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[8][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1795): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1797): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[8][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1797): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1799): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[8][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1799): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1816): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[7][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1816): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1817): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[7][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1817): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1818): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[7][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1818): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1835): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[6][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1835): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1836): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[6][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1836): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1837): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[6][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1837): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1854): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[5][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1854): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1855): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[5][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1855): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1856): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[5][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1856): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1873): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[4][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1873): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1875): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[4][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1875): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1876): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[4][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1876): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1893): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[3][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1893): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1894): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[3][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1894): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1895): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[3][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1895): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1912): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[2][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1912): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1913): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[2][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1913): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1914): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[2][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1914): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1931): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[1][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1931): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1933): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[1][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1933): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1934): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[1][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1934): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1965): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[0][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1965): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1967): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[0][2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1967): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1968): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/try_moves_reg[0][0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1968): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1971): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/move_num_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1971): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1978): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/state_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1978): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1981): (vopt-2685) [TFMPC] - Too few port connections for '\iTC/mv_indx_reg_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1981): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1998): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/INT_ff1_reg '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(1998): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2000): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/state_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2000): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2004): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[14] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2004): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2005): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[13] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2005): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2006): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[12] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2006): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2007): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[11] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2007): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2008): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[10] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2008): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2009): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[9] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2009): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2011): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[8] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2011): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2013): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[7] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2013): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2015): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[6] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2015): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2017): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[5] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2017): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2019): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[4] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2019): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2021): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[3] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2021): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2023): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[2] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2023): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2025): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[1] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2025): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2042): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[14] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2042): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2043): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[13] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2043): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2044): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[12] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2044): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2045): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[11] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2045): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2046): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[10] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2046): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2047): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[9] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2047): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2048): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2048): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2050): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2050): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2052): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2052): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2054): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2054): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2055): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2055): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2057): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2057): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2059): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2059): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2061): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2061): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2063): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/rd_data_reg[0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2063): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2073): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/MISO_smpl_reg '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2073): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2075): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/SCLK_div_reg[1] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2075): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2080): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/SCLK_div_reg[3] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2080): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2083): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/state_reg[0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2083): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2085): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_int_reg[21] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2085): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2087): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_int_reg[20] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2087): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2089): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_int_reg[19] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2089): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2151): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/smpl_cntr_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2151): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2156): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2156): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2158): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2158): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2160): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2160): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2162): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2162): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2164): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[5] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2164): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2166): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[6] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2166): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2168): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2168): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2170): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2170): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2172): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2172): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2174): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[10] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2174): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2175): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[11] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2175): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2176): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[12] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2176): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2177): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[13] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2177): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2178): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[14] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2178): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2179): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[15] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2179): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2180): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[16] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2180): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2181): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[17] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2181): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2182): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_off_reg[18] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2182): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2183): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/vld_ff2_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2183): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2185): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2185): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2187): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2187): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2189): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[15] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2189): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2191): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2191): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2193): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2193): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2195): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[9] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2195): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2197): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[11] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2197): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2199): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[13] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2199): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2201): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[16] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2201): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2203): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2203): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2205): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2205): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2207): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2207): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2209): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[10] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2209): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2211): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[12] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2211): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2213): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[14] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2213): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2220): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_comp_reg[18] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2220): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2222): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[17] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2222): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2224): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[14] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2224): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2226): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[12] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2226): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2228): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[11] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2228): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2230): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[10] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2230): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2232): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[9] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2232): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2234): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2234): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2236): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2236): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2238): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2238): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2240): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2240): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2242): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2242): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2244): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2244): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2246): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2246): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2252): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_int_reg[22] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2252): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2254): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_int_reg[23] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2254): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2256): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_int_reg[24] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2256): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2258): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_int_reg[25] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2258): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2260): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_int_reg[26] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2260): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2336): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/sub_112/U2_18 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2336): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2562): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/mult_119/S1_2_0 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2562): (vopt-2718) [TFMPC] - Missing connection for port 'S'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2580): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/mult_119/S1_3_0 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2580): (vopt-2718) [TFMPC] - Missing connection for port 'S'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2598): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/mult_119/S1_4_0 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2598): (vopt-2718) [TFMPC] - Missing connection for port 'S'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2880): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2880): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2882): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2882): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2884): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2884): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2886): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2886): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2888): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[5] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2888): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2890): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[6] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2890): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2892): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2892): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2894): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2894): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2896): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2896): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2898): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[10] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2898): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2900): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[11] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2900): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2902): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[12] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2902): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2904): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[13] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2904): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2906): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_intermediate_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2906): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2924): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_intermediate_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2924): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2926): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2926): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2928): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2928): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2930): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2930): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2932): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2932): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2934): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2934): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2936): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[5] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2936): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2938): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[6] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2938): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2940): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2940): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2942): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2942): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2944): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/prev_err_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(2944): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3005): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[0] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3005): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3007): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[1] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3007): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3009): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[2] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3009): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3011): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[3] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3011): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3013): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[4] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3013): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3015): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[5] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3015): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3017): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[6] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3017): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3019): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[7] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3019): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3021): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[8] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3021): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3023): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[9] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3023): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3025): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_ff_reg[10] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3025): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3027): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[0] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3027): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3029): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[1] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3029): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3031): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[2] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3031): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3033): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[3] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3033): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3035): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[4] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3035): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3037): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[5] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3037): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3039): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[6] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3039): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3041): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[7] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3041): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3043): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[8] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3043): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3045): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[9] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3045): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3047): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[10] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3047): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3050): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[10] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3050): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3053): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff1_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3053): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3055): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff1_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3055): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3057): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff1_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3057): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3059): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff1_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3059): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3061): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff1_reg[9] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3061): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3063): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3063): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3065): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3065): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3067): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3067): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3069): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3069): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3071): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/frwrd_zext_ff_reg[9] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3071): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3073): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3073): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3075): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3075): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3077): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3077): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3079): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3079): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3081): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3081): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3083): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3083): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3085): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3085): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3087): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3087): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3089): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3089): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3091): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[9] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3091): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3093): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[10] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3093): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3095): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[11] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3095): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3097): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[12] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3097): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3099): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/D_term_ff_reg[13] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3099): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3101): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3101): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3103): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3103): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3105): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3105): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3107): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3107): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3109): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3109): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3111): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3111): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3113): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3113): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3115): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3115): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3117): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3117): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3119): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[9] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3119): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3121): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[10] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3121): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3123): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[11] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3123): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3125): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[12] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3125): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3127): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/I_term_ff_reg[13] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3127): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3131): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3131): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3133): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3133): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3135): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3135): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3137): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3137): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3139): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3139): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3141): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[9] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3141): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3143): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[10] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3143): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3145): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[11] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3145): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3147): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[12] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3147): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3149): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/P_term_ff_reg[13] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3149): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3151): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/integrator_reg[14] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3151): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3153): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/err_sat_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3153): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3155): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/err_sat_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3155): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3157): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/err_sat_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3157): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3159): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/err_sat_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3159): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3161): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/err_sat_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3161): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3163): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/err_sat_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3163): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3165): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/err_sat_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3165): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3167): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/err_sat_reg[8] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3167): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3232): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/add_44/U1_14 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3232): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3234): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/add_1_root_add_0_root_add_97_2/U1_1 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3234): (vopt-2718) [TFMPC] - Missing connection for port 'S'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3238): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/add_1_root_add_0_root_add_97_2/U1_2 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3238): (vopt-2718) [TFMPC] - Missing connection for port 'S'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3286): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/add_1_root_add_0_root_add_97_2/U1_13 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3286): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3334): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/add_0_root_add_0_root_add_97_2/U1_13 '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3334): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3365): (vopt-2685) [TFMPC] - Too few port connections for '\iMTR/PWM_left/PWM_sig_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3365): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3367): (vopt-2685) [TFMPC] - Too few port connections for '\iMTR/PWM_left/cnt_reg[10] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3367): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3415): (vopt-2685) [TFMPC] - Too few port connections for '\iMTR/PWM_right/PWM_sig_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3415): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3419): (vopt-2685) [TFMPC] - Too few port connections for '\iMTR/PWM_right/cnt_reg[10] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3419): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3473): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[16] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3473): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3475): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[15] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3475): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3477): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[14] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3477): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3479): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[13] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3479): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3481): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[12] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3481): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3483): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[11] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3483): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3485): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[10] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3485): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3487): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3487): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3489): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3489): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3491): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3491): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3493): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3493): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3495): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3495): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3497): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3497): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3499): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[6] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3499): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3505): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3505): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3507): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3507): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3509): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3509): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3511): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3511): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3513): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/blanking_timer_reg[5] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3513): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3515): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[6] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3515): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3517): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[5] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3517): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3519): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3519): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3523): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3523): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3525): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3525): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3527): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/rghtIR_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3527): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3528): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/smpl_tmr_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3528): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3534): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/cntrIR_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3534): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3536): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/cntrIR_FF1_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3536): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3538): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/lftIR_FF1_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3538): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3550): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/iDUTY/cnt_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3550): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3552): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/iDUTY/cnt_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3552): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3554): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/iDUTY/cnt_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3554): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3592): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/add_87/U1_1_16 '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3592): (vopt-2718) [TFMPC] - Missing connection for port 'C1'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3621): (vopt-2685) [TFMPC] - Too few port connections for '\iIR/add_30/U1_1_13 '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3621): (vopt-2718) [TFMPC] - Missing connection for port 'C1'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3631): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[10] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3631): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3633): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[12] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3633): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3635): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[11] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3635): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3637): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[6] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3637): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3639): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3639): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3641): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[13] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3641): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3643): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3643): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3645): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[14] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3645): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3647): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[0] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3647): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3649): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3649): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3651): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3651): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3653): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/timer_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3653): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3655): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/fclk_cnt_reg[15] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3655): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3687): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[24] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3687): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3693): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[21] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3693): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3695): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[20] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3695): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3697): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[19] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3697): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3699): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[18] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3699): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3701): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[17] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3701): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3703): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[16] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3703): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3705): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[15] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3705): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3707): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[14] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3707): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3709): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[13] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3709): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3711): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[12] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3711): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3713): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[11] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3713): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3715): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[10] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3715): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3717): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[9] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3717): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3719): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3719): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3721): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3721): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3727): (vopt-2685) [TFMPC] - Too few port connections for '\ICHRG/duration_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(3727): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6076): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/vld_ff1_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6076): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6080): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/yy_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6080): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6092): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iSPI/SCLK_div_reg[2] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6092): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6096): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[0] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6096): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6098): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[0] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6098): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6100): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[1] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6100): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6102): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[1] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6102): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6104): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[2] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6104): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6106): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[2] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6106): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6108): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[3] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6108): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6110): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[3] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6110): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6112): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[4] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6112): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6114): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[4] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6114): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6116): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[5] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6116): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6118): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[5] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6118): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6120): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[6] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6120): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6122): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[6] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6122): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6124): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[7] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6124): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6126): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[7] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6126): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6128): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/cnt_reg[15] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6128): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6129): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[8] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6129): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6131): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_ff_reg[10] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6131): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6133): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[8] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6133): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6135): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/lft_spd_inter_ff_reg[9] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6135): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6137): (vopt-2685) [TFMPC] - Too few port connections for '\iCNTRL/rght_spd_inter_ff_reg[9] '.  Expected 6, found 5.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6137): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6143): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/rx_ff2_reg '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6143): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6149): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/shift_reg_reg[7] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6149): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6151): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/shift_reg_reg[6] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6151): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6153): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/shift_reg_reg[5] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6153): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6155): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/shift_reg_reg[4] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6155): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6157): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/shift_reg_reg[3] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6157): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6159): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/shift_reg_reg[2] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6159): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6161): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/shift_reg_reg[1] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6161): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6163): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/shift_reg_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6163): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6167): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iRX/baud_cnt_reg[8] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6167): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6181): (vopt-2685) [TFMPC] - Too few port connections for '\iWRAP/iDUT/iTX/baud_cnt_reg[11] '.  Expected 5, found 4.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6181): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6185): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[18] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6185): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6187): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawH_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6187): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6189): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawH_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6189): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6191): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawH_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6191): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6193): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawH_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6193): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6195): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawH_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6195): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6197): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawH_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6197): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6199): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawH_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6199): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6201): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawH_reg[0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6201): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6203): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawL_reg[7] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6203): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6205): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawL_reg[6] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6205): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6207): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawL_reg[5] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6207): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6209): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawL_reg[4] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6209): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6211): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawL_reg[3] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6211): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6213): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawL_reg[2] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6213): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6215): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawL_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6215): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6217): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/yawL_reg[0] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6217): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6219): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6219): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6230): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[13][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6230): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6231): (vopt-2685) [TFMPC] - Too few port connections for '\iTL/poss_moves_reg[12][1] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6231): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6232): (vopt-2685) [TFMPC] - Too few port connections for '\iNEMO/iINT/yaw_scaled_reg[13] '.  Expected 4, found 3.
+# ** Warning: /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg(6232): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "SPI_iNEMO4(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=956.
+# Loading sv_std.std
+# Loading work.KnightsTour_tb_up_right(fast)
+# Loading work.KnightsTour(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFNARX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFARX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFASX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.FADDX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.HADDX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFSSRX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFX2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NOR4X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XOR2X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO21X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO22X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND4X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND2X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND3X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AOI21X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND3X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO221X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OR2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NOR2X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OAI22X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OA21X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OAI222X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OA221X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OA22X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OA222X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO222X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND4X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AOI22X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OR3X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NOR3X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XOR3X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFARX2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XOR3X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NBUFFX2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX4_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO21X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NBUFFX4_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX8_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO22X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO222X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO221X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.IBUFFX32_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XNOR2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XOR2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OAI21X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND2X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AOI221X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND2X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OR4X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OAI221X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XNOR3X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND3X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AOI21X2_LVT(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.KnightPhysics(fast)
+# Loading work.SPI_iNEMO4(fast)
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'SPI_iNEMO4' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /KnightsTour_tb_up_right/iPHYS/iNEMO File: /filespace/a/aseigler/ece551/final_netlists/SPI_iNEMO4.sv
+# Loading work.inverse_PWM11e(fast)
+# Error loading design
+# End time: 16:25:19 on Dec 13,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 958
+# Compile of KnightPhysics.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of SPI_iNEMO4.sv was successful.
+# Compile of UART.v was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t ns -L /filespace/a/aseigler/ece551/SAED32_lib -voptargs=+acc work.KnightsTour_tb_up_right
+# vsim -t ns -L /filespace/a/aseigler/ece551/SAED32_lib -voptargs="+acc" work.KnightsTour_tb_up_right 
+# Start time: 16:28:11 on Dec 13,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "SPI_iNEMO4(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "RemoteComm(fast)".
+# Loading sv_std.std
+# Loading work.KnightsTour_tb_up_right(fast)
+# Loading work.KnightsTour(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFNARX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFARX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFASX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.FADDX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.HADDX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFSSRX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFX2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NOR4X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XOR2X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO21X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO22X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND4X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND2X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND3X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AOI21X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND3X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO221X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OR2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NOR2X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OAI22X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OA21X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OAI222X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OA221X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OA22X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OA222X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO222X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND4X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AOI22X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OR3X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NOR3X0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XOR3X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.DFFARX2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XOR3X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NBUFFX2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX4_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX0_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO21X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NBUFFX4_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX8_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO22X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO222X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AO221X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.IBUFFX32_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.INVX1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XNOR2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XOR2X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OAI21X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND2X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AOI221X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.NAND2X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OR4X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.OAI221X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.XNOR3X1_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AND3X2_LVT(fast)
+# Loading /filespace/a/aseigler/ece551/SAED32_lib.AOI21X2_LVT(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.KnightPhysics(fast)
+# Loading work.SPI_iNEMO4(fast)
+# Loading work.inverse_PWM11e(fast)
+run -all
+# Begin calibrate check
+# Break key hit
+# Simulation stop requested.
+run -continue
+# Calibrate check complete
+# Begin move 2 north without fanfare
+# Break key hit
+# Simulation stop requested.
+# End time: 16:31:32 on Dec 13,2021, Elapsed time: 0:03:21
+# Errors: 0, Warnings: 2

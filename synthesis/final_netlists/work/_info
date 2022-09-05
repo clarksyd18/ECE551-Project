@@ -1,0 +1,313 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_2 2021.06, Jun 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/filespace/a/aseigler/551/final_linux
+T_opt
+!s110 1639507747
+V=N<AIhZ2hjl70z:7?^fAn1
+04 23 4 work KnightsTour_tb_up_right fast 0
+=1-000ae431a4f1-61b8e723-2bde8-3b47
+Z2 !s124 OEM100
+Z3 o-quiet -auto_acc_if_foreign -work work -L /filespace/a/aseigler/ece551/SAED32_lib +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OE;O;2021.2_2;73
+R1
+T_opt1
+!s110 1639544925
+VHRDLC9U:enGCfm_c>]2dg2
+04 22 4 work KnightsTour_tb_netlist fast 0
+=1-000ae431a4f1-61b9785c-b23d9-32d6
+R2
+R3
+R4
+n@_opt1
+R5
+vinverse_PWM11e
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z7 !s110 1639434477
+!i10b 1
+!s100 bO[nVcTD8:;QVJDJNVTfb3
+Ih`3iMP_N5HOn9Cnc>Fjib3
+S1
+Z8 d/filespace/a/aseigler/ece551/final_netlists
+Z9 w1639434369
+Z10 8/filespace/a/aseigler/ece551/final_netlists/KnightPhysics.sv
+Z11 F/filespace/a/aseigler/ece551/final_netlists/KnightPhysics.sv
+!i122 12
+L0 259 49
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OE;L;2021.2_2;73
+r1
+!s85 0
+31
+Z14 !s108 1639434477.000000
+Z15 !s107 /filespace/a/aseigler/ece551/final_netlists/KnightPhysics.sv|
+Z16 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/aseigler/ece551/final_netlists/KnightPhysics.sv|
+!i113 0
+Z17 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+ninverse_@p@w@m11e
+vKnightPhysics
+R6
+R7
+!i10b 1
+!s100 Dj^cM@?QM?90VI1G]bffd2
+Ia`G;DNYiEdZO@bb@<ONKV3
+S1
+R8
+R9
+R10
+R11
+!i122 12
+L0 2 253
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R4
+n@knight@physics
+vKnightsTour
+!s110 1639544737
+!i10b 1
+!s100 QMfcUM]^@57Zd?0>m`LbS3
+Ih6hCLLjGR;gT6F^L5<?Yg2
+R8
+w1639544581
+8/filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg
+F/filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg
+!i122 26
+L0 8 8352
+R12
+R13
+r1
+!s85 0
+31
+!s108 1639544737.000000
+!s107 /filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/a/aseigler/ece551/final_netlists/KnightsTour.vg|
+!i113 0
+Z18 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+n@knights@tour
+vKnightsTour_tb
+R6
+!s110 1639433630
+!i10b 1
+!s100 CkI7[Q7k7J]`SO`cVKd=@2
+IdCk0QcBC;OlQITo@M?4S02
+S1
+R8
+w1639433595
+8/filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb.sv
+F/filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb.sv
+!i122 9
+L0 2 148
+R12
+R13
+r1
+!s85 0
+31
+!s108 1639433629.000000
+!s107 /filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb.sv|
+!i113 0
+R17
+R4
+n@knights@tour_tb
+vKnightsTour_tb_netlist
+R6
+!s110 1639544887
+!i10b 1
+!s100 PQO<6=B:6eD;@2H>kZgH:2
+IQlmBW]fTFCXieI32I1_530
+S1
+R8
+w1639544879
+Z19 8/filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb_netlist.sv
+Z20 F/filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb_netlist.sv
+!i122 28
+Z21 L0 2 175
+R12
+R13
+r1
+!s85 0
+31
+!s108 1639544887.000000
+Z22 !s107 /filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb_netlist.sv|
+Z23 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/aseigler/ece551/final_netlists/KnightsTour_tb_netlist.sv|
+!i113 0
+R17
+R4
+n@knights@tour_tb_netlist
+vKnightsTour_tb_up_right
+R6
+!s110 1639544769
+!i10b 1
+!s100 [STmiK[amhj?jDL@6RlDI3
+In5kBezY8n^=VHFhT6GTfN2
+S1
+R8
+w1639507612
+R19
+R20
+!i122 27
+R21
+R12
+R13
+r1
+!s85 0
+31
+!s108 1639544769.000000
+R22
+R23
+!i113 0
+R17
+R4
+n@knights@tour_tb_up_right
+vRemoteComm
+R6
+R7
+!i10b 1
+!s100 8iG@N@jQRoc^8Yc:[KT]P2
+I@Kf=e@GJUVXlenHVe=RTE0
+S1
+R8
+w1639434393
+8/filespace/a/aseigler/ece551/final_netlists/RemoteComm.sv
+F/filespace/a/aseigler/ece551/final_netlists/RemoteComm.sv
+!i122 13
+L0 3 119
+R12
+R13
+r1
+!s85 0
+31
+R14
+!s107 /filespace/a/aseigler/ece551/final_netlists/RemoteComm.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/aseigler/ece551/final_netlists/RemoteComm.sv|
+!i113 0
+R17
+R4
+n@remote@comm
+vSPI_iNEMO4
+R6
+R7
+!i10b 1
+!s100 igVcUhSibTbS98f?^85:Y1
+IcEk7@IP8IX^@F>dRHV2UX1
+S1
+R8
+w1639434351
+8/filespace/a/aseigler/ece551/final_netlists/SPI_iNEMO4.sv
+F/filespace/a/aseigler/ece551/final_netlists/SPI_iNEMO4.sv
+!i122 14
+L0 2 196
+R12
+R13
+r1
+!s85 0
+31
+R14
+!s107 /filespace/a/aseigler/ece551/final_netlists/SPI_iNEMO4.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/aseigler/ece551/final_netlists/SPI_iNEMO4.sv|
+!i113 0
+R17
+R4
+n@s@p@i_i@n@e@m@o4
+vUART
+R7
+!i10b 1
+!s100 =K<aWClFj<FIP<YPDGX6U3
+IfcfKGzRIEh63m6KK:FzI_2
+R8
+w1639434445
+8/filespace/a/aseigler/ece551/final_netlists/UART.v
+F/filespace/a/aseigler/ece551/final_netlists/UART.v
+!i122 15
+L0 2 24
+R12
+R13
+r1
+!s85 0
+31
+R14
+!s107 /filespace/a/aseigler/ece551/final_netlists/UART.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/a/aseigler/ece551/final_netlists/UART.v|
+!i113 0
+R18
+R4
+n@u@a@r@t
+vUART_rx
+R6
+R7
+!i10b 1
+!s100 m6H=^7?fJI4Rhm?Fhe7e[0
+ImLAdc=GWVU?OSaGTD6m4d2
+S1
+R8
+w1639434461
+8/filespace/a/aseigler/ece551/final_netlists/UART_rx.sv
+F/filespace/a/aseigler/ece551/final_netlists/UART_rx.sv
+!i122 16
+L0 2 132
+R12
+R13
+r1
+!s85 0
+31
+R14
+!s107 /filespace/a/aseigler/ece551/final_netlists/UART_rx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/aseigler/ece551/final_netlists/UART_rx.sv|
+!i113 0
+R17
+R4
+n@u@a@r@t_rx
+vUART_tx
+R6
+R7
+!i10b 1
+!s100 Djg_g8AlFY[^?^=Oim6FZ0
+IDH5HWGgYazeDb@dT4:m5J2
+S1
+R8
+w1639434472
+8/filespace/a/aseigler/ece551/final_netlists/UART_tx.sv
+F/filespace/a/aseigler/ece551/final_netlists/UART_tx.sv
+!i122 17
+L0 2 113
+R12
+R13
+r1
+!s85 0
+31
+R14
+!s107 /filespace/a/aseigler/ece551/final_netlists/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/a/aseigler/ece551/final_netlists/UART_tx.sv|
+!i113 0
+R17
+R4
+n@u@a@r@t_tx
